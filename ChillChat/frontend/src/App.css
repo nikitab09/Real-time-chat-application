@@ -1,0 +1,194 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  background-image: url('https://w0.peakpx.com/wallpaper/299/582/HD-wallpaper-fathers-stuff-ultra-aero-patterns-dark-black-glasses-pattern-male-crown-father-stuff-mustache-hats-necktie.jpg');
+  background-repeat: repeat; /* allows image to tile when scrolling */
+  background-position: top left; /* starts tiling from top left */
+  background-size: auto; /* keeps original size of image */
+
+  color: beige; /* text color */
+}
+
+
+
+
+.head {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  height: 50px;
+}
+
+.form-container {
+  margin: 130px 250px;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+}
+
+.login-form input {
+  width: 300px;
+  border-radius: 7px;
+  padding: 10px;
+  margin-right: 10px;
+}
+.login-link{
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+button {
+  border-radius: 7px;
+  min-width: 125px;
+  height: 45px;
+  padding: 5px;
+  background-color: blueviolet;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(90, 19, 156);
+}
+
+.logout-link {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+  color: white;
+  align-self: flex-end; 
+}
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 20px 40px;
+}
+
+.my-chat, .notmy-chat {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.my-chat {
+  width: 30%;
+  color: #e0e0e0;
+  background-color: rgba(98, 0, 234, 0.6); /* semi-transparent violet */
+  align-self: flex-end;
+  border: px solid rgba(130, 23, 165, 0.7); /* slightly transparent border */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.notmy-chat {
+  width: 30%;
+  color: #e0e0e0;
+  background-color: rgba(197, 26, 188, 0.609); /* semi-transparent blue */
+  align-self: flex-start;
+  border:2px #0f96ea;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.user {
+  font-weight: bold;
+  color: #bb86fc;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.msg {
+  display: block;
+}
+
+.header {
+  background-color: blueviolet;
+  color: bisque;
+  padding: 10px;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+.chatbox-container {
+  position: fixed;
+  bottom: 20px; /* always a bit above bottom */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  pointer-events: auto;
+  /* no background */
+}
+
+.chatbox {
+  display: flex;
+}
+
+.chatbox input {
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2); /* semi-transparent */
+  color: #fff;
+}
+
+.chatbox button {
+  border-radius: 10px;
+  padding: 10px 15px;
+  background-color: #bb86fc; /* matches message bubble accents */
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.chatbox button:hover {
+  background-color: rgb(90, 19, 156);
+}
+
+@media screen and (max-width: 730px) {
+  .form-container {
+    margin: 0 20px;
+  }
+
+  .login-form input {
+    width: 100%;
+  }
+
+  button {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .my-chat, .notmy-chat {
+    max-width: 80%;
+  }
+}

@@ -1,0 +1,108 @@
+.login-page {  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+  justify-content: center;  
+  min-height: 100vh;  
+  background-image: url('https://w0.peakpx.com/wallpaper/299/582/HD-wallpaper-fathers-stuff-ultra-aero-patterns-dark-black-glasses-pattern-male-crown-father-stuff-mustache-hats-necktie.jpg');
+  background-repeat: repeat;  
+  background-size: auto;  
+  background-position: top left;
+  color: #fff;  
+  animation: fadeIn 1s ease;  
+}
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.form-container {  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+  padding: 50px;  
+  border-radius: 15px;  
+  background:rgba(105, 103, 107, 0.6);
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);  
+  transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+}
+
+.welcome-msg {  
+  margin-bottom: 25px;  
+  font-size: 2rem;  
+  text-align: center;  
+  color: #fff;
+  text-shadow: 0 0 5px #ff9a9e;
+}  
+
+.login-form {  
+  display: flex;  
+  flex-direction: column;  
+  gap: 15px;  
+  width: 100%;  
+  max-width: 300px;  
+}  
+
+.login-form input {  
+  padding: 12px 15px;  
+  border-radius: 12px;  
+  border: none;  
+  outline: none;  
+  font-size: 1rem;  
+  transition: all 0.3s ease;  
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.login-form input::placeholder {
+  color: rgba(255,255,255,0.7);
+  transition: color 0.3s ease;
+}
+
+.login-form input:focus {
+  box-shadow: 0 0 15px #dedde5;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+.input-error {  
+  border: 2px solid #ff4e50;  
+}  
+
+.login-button {  
+  padding: 12px;  
+  border-radius: 12px;  
+  border: none;  
+  background: linear-gradient(90deg, #6fa4ff 0%, #924eff 100%);  
+  color: white;  
+  font-size: 1rem;  
+  cursor: pointer;  
+  transition: all 0.4s ease;  
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}  
+
+.login-button:hover {  
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}  
+
+.error-msg {  
+  margin-top: 10px;  
+  color: #ff4e50;  
+  font-size: 0.9rem;  
+  text-align: center;  
+  animation: fadeIn 0.5s ease;  
+}  
+
+@media screen and (max-width: 480px) {
+  .form-container { padding: 30px; }
+  .welcome-msg { font-size: 1.5rem; }
+}
