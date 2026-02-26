@@ -30,6 +30,6 @@ A real-time chat web application built using the MERN stack with MongoDB and Soc
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone 
+git clone https://github.com/nikitab09/Real-time-chat-application.git
 cd ChillChat
 
