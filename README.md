@@ -33,3 +33,19 @@ A real-time chat web application built using the MERN stack with MongoDB and Soc
 git clone https://github.com/nikitab09/Real-time-chat-application.git
 cd ChillChat
 
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Create .env File
+
+Inside root folder:
+
+MONGO_URI=your_mongodb_connection_string
+PORT=3000
+
+4️⃣ Run Server
+npm start
+
+Server will run on:
+
+http://localhost:3000
